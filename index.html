@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Təsadüfi İstifadəçi Məlumatları</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <!-- İstifadəçi Məlumatlarının Göstəriləcəyi Konteyner -->
+  <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+    <!-- İstifadəçi Şəkli -->
+    <div class="flex justify-center mb-4">
+      <img id="user-image" src="" alt="İstifadəçi Şəkli" class="w-32 h-32 rounded-full object-cover">
+    </div>
+    <!-- İstifadəçi Adı -->
+    <h2 id="user-name" class="text-xl font-bold text-center mb-2">Ad Soyad</h2>
+    <!-- İstifadəçi Email -->
+    <p id="user-email" class="text-gray-600 text-center mb-2">Email</p>
+    <!-- İstifadəçi Telefon Nömrəsi -->
+    <p id="user-phone" class="text-gray-600 text-center">Telefon</p>
+    <!-- Yeni İstifadəçi Yaratmaq Üçün Düymə -->
+    <div class="mt-4 flex justify-center">
+      <button id="new-user-btn" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
+        Yeni İstifadəçi
+      </button>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
