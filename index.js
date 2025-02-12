@@ -14,24 +14,6 @@
 
 
 
-async function fetchUser() {
-    try {
-      const response = await fetch('https://randomuser.me/api/');
-      const data = await response.json();
-      const user = data.results[0];
 
-      // Məlumatların DOM elementlərinə ötürülməsi
-      document.getElementById('user-image').src = user.picture.large;
-      document.getElementById('user-name').textContent = `${user.name.first} ${user.name.last}`;
-      document.getElementById('user-email').textContent = user.email;
-      document.getElementById('user-phone').textContent = user.phone;
-    } catch (error) {
-      console.error('Xəta baş verdi:', error);
-    }
-  }
 
-  // Səhifə yükləndikdə ilkin istifadəçi məlumatını yükləmək
-  fetchUser();
-
-  // "Yeni İstifadəçi" düyməsinə klikləndikdə yeni məlumatların alınması
-  document.getElementById('new-user-btn').addEventListener('click', fetchUser);
+ 
